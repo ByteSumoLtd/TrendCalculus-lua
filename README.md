@@ -1,6 +1,4 @@
 
-
-             
               |       |     
               |--\  /-|-.-.             .
               |__/\/  | \/_            . :.
@@ -46,11 +44,12 @@ pl.lapp, csv, and date all luarocks that are embedded in this code already, noth
 
          
 # References:
+
+http://bytesumo.com/blog/2015/01/trendcalculus-data-science-studying-trends
 https://bitbucket.org/bytesumo/trendcalculus-public
 
 https://github.com/geoffleyland/lua-csv
 
 https://github.com/stevedonovan/Penlight
 
-http://tieske.github.io/date/        
-
+http://tieske.github.io/date/
