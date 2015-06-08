@@ -22,7 +22,8 @@ TrendCalculus is my algorithm for enabling fast, bottom up, hierarchical trendwi
 
 ### How ###
 
-To learn how to run the code, run the code and apply the -v option:
+To learn how to run the code, check the help and version info using the -v option.
+A detailed help me and usage notes will be produced.
 
 > lua trendcalculus.lua -v
 
@@ -37,7 +38,7 @@ GPLv3
 
 The code should work with zero dependencies.
 Execute it using luajit, lua 5.1 or lua 5.2.
-It should run out the box as is.
+It should run out the box as is once you can execute lua on the command line.
 
 Note:
 pl.lapp, csv, and date all all luarocks that I have embedded in this code already as part of the release.
@@ -47,6 +48,7 @@ So nothing to do, nothing to install. Just run it.
 # References:
 
 http://bytesumo.com/blog/2015/01/trendcalculus-data-science-studying-trends
+
 https://bitbucket.org/bytesumo/trendcalculus-public
 
 https://github.com/geoffleyland/lua-csv
