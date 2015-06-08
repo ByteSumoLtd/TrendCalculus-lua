@@ -1,5 +1,4 @@
-
-              |       |     
+|       |     
               |--\  /-|-.-.             .
               |__/\/  | \/_            . :.
                ___/ _   _  _  __   ___/ . .
@@ -27,6 +26,7 @@ To learn how to run the code, run the code and apply the -v option:
 
 > lua trendcalculus.lua -v
 
+The scripts run like a command line app, accepting stdin or a named file using the -f option.
 Questions can be posted to andrew at bytesumo.com
 
 ### License ###
@@ -40,7 +40,8 @@ Execute it using luajit, lua 5.1 or lua 5.2.
 It should run out the box as is.
 
 Note:
-pl.lapp, csv, and date all luarocks that are embedded in this code already, nothing to do, nothing to install.
+pl.lapp, csv, and date all all luarocks that I have embedded in this code already as part of the release.
+So nothing to do, nothing to install. Just run it.
 
          
 # References:
