@@ -30,6 +30,10 @@ A detailed help me and usage notes will be produced.
 The scripts run like a command line app, accepting stdin or a named file using the -f option.
 Questions can be posted to andrew at bytesumo.com
 
+See:
+
+http://www.meetup.com/Trendwise-Research-London
+
 ### License ###
 
 GPLv3
