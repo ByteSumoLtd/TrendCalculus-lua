@@ -32,6 +32,7 @@ Questions can be posted at the google group set up for the code, or you can ask 
 
 See:
 https://groups.google.com/forum/#!forum/trendcalculus
+
 http://www.meetup.com/Trendwise-Research-London
 
 ### License ###
