@@ -28,10 +28,10 @@ A detailed help me and usage notes will be produced.
 > lua trendcalculus.lua -v
 
 The scripts run like a command line app, accepting stdin or a named file using the -f option.
-Questions can be posted to andrew at bytesumo.com
+Questions can be posted at the google group set up for the code, or you can ask them in person at one of the meetups that are held in London:
 
 See:
-
+https://groups.google.com/forum/#!forum/trendcalculus
 http://www.meetup.com/Trendwise-Research-London
 
 ### License ###
