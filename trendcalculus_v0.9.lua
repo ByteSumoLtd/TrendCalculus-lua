@@ -120,15 +120,8 @@ local whohow = [[
 
                   -- Libraries --
 -- pcall(require, "strict")
--- local csv = require"csv"
--- local csv = require("csv")
 
       -- I was having issues with macports and luarocks. These help:
-
-local require = require
-
-require("luarocks.require")
-require("luarocks.loader")      
 
 local csv = require 'csv'
 
