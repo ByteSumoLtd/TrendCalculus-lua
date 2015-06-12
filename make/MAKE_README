@@ -1,0 +1,15 @@
+
+2015-06-12
+a note on these tests:
+
+I've just tested embedding lua and compiling it to a c program, and I got it working.
+Looking at the test script, I'm seeing (and am quite amazed by it) just using regular luajit runs faster.
+
+I suppose that isn't surprising :-)
+
+Anyway, there are benefits to proving that it can be done, including sorting out building an interface to R and other apps for example.
+
+Feel free to play around with the compilation locally, maybe I got some tuning wrong. 
+Your mileage may vary.
+
+Andrew
