@@ -43,11 +43,17 @@ to use it: Install devtools. libary(devtools)
 then set the working directory to trendcalculus-public 
 
 >libary(quantmod)
+
 >setwd = "~/trendcalculus-public"
+
 >load_all("R_tcalc")
+
 >getSymbols("BP.L")
+
 >BP.Close <- BP.L[,4]
+
 >head(BP.Close)
+
 >tc.data.table(BP.Close)
 
 The output will be a data.table which can be used in further anlaysis.
