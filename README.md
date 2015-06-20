@@ -16,6 +16,8 @@
 
   Version: 1.0.0
 
+  Source:  https://bitbucket.org/bytesumo/trendcalculus-public
+
 # Description #
 
 TrendCalculus is my algorithm for enabling fast, bottom up, hierarchical trendwise partitioning of timeseries data using a model-free approach which is extremely efficient.
@@ -28,6 +30,30 @@ A detailed help me and usage notes will be produced.
 > lua trendcalculus.lua -v
 
 The scripts run like a command line app, accepting stdin or a named file using the -f option.
+
+Test the software using the bash script for testing:
+
+> . test.sh
+
+
+### Calling TrendCalculus from R ###
+
+A minimalistic integration with R included (but it is a bit of a hack). 
+to use it: Install devtools. libary(devtools)
+then set the working directory to trendcalculus-public 
+
+>libary(quantmod)
+>setwd = "~/trendcalculus-public"
+>load_all("R_tcalc")
+>getSymbols("BP.L")
+>BP.Close <- BP.L[,4]
+>head(BP.Close)
+>tc.data.table(BP.Close)
+
+The output will be a data.table which can be used in further anlaysis.
+
+### Help ###
+
 Questions can be posted at the google group set up for the code, or you can ask them in person at one of the meetups that are held in London:
 
 See:

@@ -1,0 +1,12 @@
+Package: rtc
+Title: RTrendCalculus: Multi-Scale Trend Change Detection  
+Version: 0.0.0.1
+Authors@R: person("Andrew", "Morgan", email = "andrew@bytesumo.com", role = c("aut", "cre"))
+Description: Identifies Trend Reversals over timeseries data. 
+Depends: R (>= 3.2.0)
+License: GPL-3
+LazyData: true
+Imports:
+   data.table
+   ,zoo
+   , xts

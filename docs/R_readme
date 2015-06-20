@@ -1,0 +1,20 @@
+
+the R code in this release can be run as follows:
+
+#	1. set your working directory in R to where you have the trendcalculus-public folder
+	   setwd("~/trendcalculus-public")
+
+#	2. load the R package for trendcalculus into your session. This uses devtools which you may need to install. check the function loaded.
+	   load_all("R_tcalc")
+	   tc.data.table 
+
+#	3. form a zoo object having just the values of interest. Here I leverage quantmod libs to fetch stock data. 
+	   getSymbols("IBM")
+	   IBM.Close <- IBM[,4]
+
+#	4. run the function to see output. It produces a data.table. You may need to install it.
+	   tc.data.table(IBM.Close)
+
+#	5. save output to a local data table
+	   mytst <- tc.data.table(IBM.Close)	
+	   str(mytst)	
