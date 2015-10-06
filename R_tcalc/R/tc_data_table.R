@@ -71,7 +71,7 @@ dirrtmp <- paste(setdirectory, "/", "out", "/", "r_out.csv", sep ="")
 
 ## this will write out the csv format data I need.
 
-write.table(closes, file = dirtmp, quote = F, col.names = T, sep=",") 
+write.table(closes, file = dirtmp, quote = FALSE, col.names = T, sep=",") 
 
 ## now all the wrangling is done, push the data through the program and read it back in as a zoo object
 
