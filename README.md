@@ -1,4 +1,4 @@
-              |       |     
+|       |     
               |--\  /-|-.-.             .
               |__/\/  | \/_            . :.
                ___/ _   _  _  __   ___/ . .
@@ -42,7 +42,7 @@ A minimalistic integration with R included (but it is a bit of a hack).
 to use it: Install devtools. libary(devtools)
 then set the working directory to trendcalculus-public 
 
->libary(quantmod)
+>library(quantmod)
 
 >setwd = "~/trendcalculus-public"
 
