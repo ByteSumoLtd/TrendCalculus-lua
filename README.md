@@ -22,6 +22,13 @@
 
 TrendCalculus is my algorithm for enabling fast, bottom up, hierarchical trendwise partitioning of timeseries data using a model-free approach which is extremely efficient.
 
+# Further Documentation #
+
+  A method document that explains simply how the algorithm works is available here:
+  
+  https://github.com/bytesumo/TrendCalculus/blob/master/HowToStudyTrends_v1.03.pdf
+
+
 ### How ###
 
 To learn how to run the code, check the help and version info using the -v option.
