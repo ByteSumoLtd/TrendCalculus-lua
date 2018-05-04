@@ -10,7 +10,8 @@
                                                                                                                         
   TrendCalculus: Streaming Multi-Scale Trend Change Detection Algorithm
 
-  tcfg: Trend Calculus Feature Generator.  
+  tcfg v.1.0.1 : Trend Calculus Feature Generator.  
+
   Copyright 2014-2018, ByteSumo Limited (Andrew J Morgan) 
 
   This program implements the unsupervised "lagging labeller" functionality that extends trend calculus
@@ -87,9 +88,11 @@ Revisions::
     I also swapped over the algorithms to track the offsets rather than the dates and then looked up the dates when needed for printing.
 
   05-03-2018 
-    I'm editting this program to suit Karoo_GP input format. Also adding flags - print out training files (only 5 records after turning points to emulate timegates)
+    I'm editting this program to better suit Karoo_GP input format. Also adding flags - print out training files (only 5 records after turning points to emulate timegates)
     or print out all training data. Also need to create switch to print a streaming feature generator ! to do!
 
+  04-05-2018
+    publishing tcfg, a version of trendcalculus with options to generate trend specific features, using the -g -n -m options, using rewind and hindsight
 
 Embedded Libraries::
 
@@ -1772,7 +1775,7 @@ local f = assert(csv.openstring(data, data.parameters))
         
       
         
-        for i = revhist[roff].revoffset, (offset -1) do -- start of the offset range loop
+        for i = revhist[roff].revoffset, (offset - 1) do -- start of the offset range loop
           counter = counter + 1
           
           -- calculate the relative change from the offset i's price and offset to the target price and offset
