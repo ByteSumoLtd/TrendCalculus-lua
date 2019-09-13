@@ -1,3 +1,31 @@
 
 The trendcalculus.lua program is self documented. Just run it with a -v option to see the version and detailed options explainations.
 
+If you wish to test stacking trendcalculus, as explained in the presentations, try this on a nix command line:
+
+lua trendcalculus.lua -F "," -OFS "," -p 1 -h -H -n 3 -r -f data/db_output_FTSE.csv | \
+tee trends_p1.csv | lua trendcalculus.lua -F "," -OFS "," -p 2 -h -H -n 3 -r |        \
+tee trends_p2.csv | lua trendcalculus.lua -F "," -OFS "," -p 3 -h -H -n 3 -r |        \
+tee trends_p3.csv | lua trendcalculus.lua -F "," -OFS "," -p 4 -h -H -n 3 -r |        \
+tee trends_p4.csv
+
+You can see from the test above, that the changepoints calculated in the first pass of the algorithm, can be fed into a second pass, meaning that
+on the second pass we are running trendcalculus on a stream of *changepoints* of window n=3, implying the timewindows on the second pass are not fixed
+windows of time but rather dynamic depending on the length of the trends between those change points it examines. Each further pass of the algorithm accepts less data.
+It means that we can continue to summarise up our changepoints with decreasing cost, which is a nice bonus.
+
+The test run above can be examined simply using a line count, to reveal:
+
+> wc -l *_p[1-4].csv
+    3651 trends_p1.csv
+     836 trends_p2.csv
+     216 trends_p3.csv
+      44 trends_p4.csv
+    4747 total
+
+
+Imperically for stock market data, we see from the FTSE output studied, that the number of change points found on each further pass of the algorithm seems to falls at a ratio.
+When we plot the log of these counts by "pass number", which we can also call a Stream Order, we determine the plot produces a straight line, implying the branching
+of trends that we uncover is fractal. Imperically it would seem that stockmarket trends follow Horton's Law of Stream Order, which is said to govern all branching 
+mechanisms found in nature, such as the branching found in plants like trees, in blood vessels, and in river networks.
+
