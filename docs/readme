@@ -16,8 +16,9 @@ It means that we can continue to summarise up our changepoints with decreasing c
 
 The test run above can be examined simply using a line count, to reveal:
 
-> wc -l *_p[1-4].csv
-    3651 trends_p1.csv
+wc -l *_p[1-4].csv
+
+3651 trends_p1.csv
      836 trends_p2.csv
      216 trends_p3.csv
       44 trends_p4.csv
