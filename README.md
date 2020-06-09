@@ -1,4 +1,5 @@
-|       |     
+```
+              |       |     
               |--\  /-|-.-.             .
               |__/\/  | \/_            . :.
                ___/ _   _  _  __   ___/ . .
@@ -8,7 +9,7 @@
                                   / . ..  .:
                                    .: .  .:  
                 
-
+```
 
 # TrendCalculus: Streaming Multi-Scale Trend Change Detection Algorithm #
 
