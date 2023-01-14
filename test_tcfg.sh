@@ -20,7 +20,7 @@ name="all_DJI"
 cp ${src}db_output_${name}.csv db_output.csv
 
 # the paramter to call to generate trend feature is -g, which uses hindsight and rewind to generate z+m timeframes of features against trend labels found on window z
-time cat db_output.csv |  lua tcfg_v1.0.lua -F "," -OFS "," -p 1 -h -H -n $z -m ${m} -g > out/tcfg_output_${z}.csv
+time cat db_output.csv |  lua tcfg_v1.0.lua -F "," -OFS "," -p 1 -h -H -n $z -m ${m} -g > out/tcfg_out_${name}__${z}.csv
 
 mv db_output.csv out/.
 wc -l out/*.csv
