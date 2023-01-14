@@ -197,7 +197,7 @@ local whohow = [[
             
             _Columns_               _Column_Aliases_Accepted_
             1: TimeSeriesIdentifier ("ric", "id", "ref", "instrument", "ts", "ticker", "TimeSeriesIdentifier", "1")
-            2: ObservationTime      ("date", "time", "timestamp", "period", "datetime","date_time", "2")      
+            2: ObservationTime      ("UserDate", "date", "time", "timestamp", "period", "datetime","date_time", "2")      
             3: Value                ("last", "close", "value", "obs", "count", "sum", "price", "measurement", "3")
  
         -- if your data is in this format, but has different headers, the program will need alteration to accept your column alias.
@@ -1626,7 +1626,7 @@ end
 --                                    IF YOU HAVE OTHER COLUMN ALIASES, REMAP THE COLUMN NAMES HERE
 
 params.columns = {   ric  = { names = {"ric", "symbol","ts_id", "id", "ref", "instrument", "ts", "ticker", "TimeSeriesIdentifier", "1"}}
-                   , date = { names = {"", "date", "time", "timestamp", "period", "datetime","date_time", "2"}}
+                   , date = { names = {"", "UserDate", "date", "time", "timestamp", "period", "datetime","date_time", "2"}}
                    , last = { names = {"last", "close", "value", "obs", "count", "sum", "price", "measurement", "measure", "3"}}
                  }
 
